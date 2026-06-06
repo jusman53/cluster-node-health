@@ -1,0 +1,10 @@
+# Python virtual environment — machine-specific and huge. Regenerated from
+# a requirements file, never committed.
+venv/
+
+# Compiled Python bytecode — generated automatically, not source.
+__pycache__/
+*.pyc
+
+# macOS Finder metadata — junk.
+.DS_Store
