@@ -15,7 +15,7 @@ def count_nodes_states(nodes: list[dict]) -> dict:
 
 def unhealthy_node_names(nodes: list[dict]) -> list[str]:
     """Return the names of nodes that are NotReady or Cordoned."""
-    return [n["name"] for n in nodes if n["unschedulable"] or not n["ready"]]
+    return [n["name"] for n in nodes if n.get("unschedulable") or not n.get("ready", False)]
 
 
 if __name__ == "__main__":
